@@ -1,0 +1,42 @@
+.for-width {
+  background-color: rgb(22, 1, 1);
+  width: 500px;
+}
+
+.for-width form {
+  width: 100%;
+}
+
+.input-container-div {
+  position: relative;
+}
+.icon-user-input {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+}
+
+.input-single-form-space {
+  width: 100%;
+}
+
+.for-width form button {
+  cursor: pointer;
+}
+
+.item-list-target-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-item-cls {
+  background-color: rgb(22, 1, 1);
+  width: 500px;
+}
+
+.single-item-cls button {
+  cursor: pointer;
+}

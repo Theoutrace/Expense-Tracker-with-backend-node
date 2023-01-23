@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-center align-items-center position-sticky $zindex-sticky fixed-top"
+    >
+      <div class="p-0 text-white text-uppercase h4">Expense Tracker App</div>
+    </div>
+    <div class="container my-2 rounded d-flex justify-content-center for-width">
+      <form class="d-flex flex-column p-2 py-4" id="form-id">
+        <input id="hidden-for-ids" value="0" hidden />
+        <div class="input-container-div">
+          <img
+            src="./images/user.png"
+            width="20"
+            class="icon-user-input"
+            alt=""
+          />
+          <input
+            placeholder="Price"
+            class="my-1 rounded pl-5 p-2 border-0 bg-light input-single-form-space"
+            id="price-id"
+            type="text"
+          />
+        </div>
+
+        <div class="input-container-div">
+          <img
+            src="./images/atemail.png"
+            width="20"
+            class="icon-user-input"
+            alt=""
+          />
+          <select
+            class="my-1 rounded pl-5 p-2 border-0 bg-light input-single-form-space"
+            id="category-id"
+          >
+            <option disabled>Category</option>
+            <option>Food</option>
+            <option>Car</option>
+            <option>Family</option>
+            <option>Bank</option>
+            <option>M-funds</option>
+          </select>
+        </div>
+
+        <div class="input-container-div">
+          <img
+            src="./images/phone.png"
+            width="20"
+            class="icon-user-input"
+            alt=""
+          />
+          <input
+            placeholder="Description"
+            class="my-1 rounded pl-5 p-2 border-0 bg-light input-single-form-space"
+            id="description-id"
+            type="text"
+          />
+        </div>
+
+        <button
+          class="btn bg-danger my-2 text-white"
+          type="submit"
+          id="form-submit"
+        >
+          + Add Expense
+        </button>
+      </form>
+    </div>
+    <div class="item-list-target-div" id="targetRootId"></div>
+  </body>
+  <script src="./script.js"></script>
+</html>
